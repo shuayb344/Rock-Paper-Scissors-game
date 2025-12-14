@@ -20,7 +20,7 @@
      }
    });
  function updateScore() {
-      document.querySelector('.p-button').innerHTML = `wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties}`;
+      document.querySelector('.p-button').innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
  }
  function updaterersults(){
      document.querySelector('.presults').innerHTML = result;
@@ -48,23 +48,23 @@
           if (playerMove === 'scissors'){
                
                if(computerMove === 'paper'){
-                    result = 'you win'
+                    result = 'You Win'
                }
                else if(computerMove === 'rock'){
-                    result = 'you lose'
+                    result = 'You Lose'
                }
                else if(computerMove === 'scissors'){
                     result = 'Tie'
                }}
           else if(playerMove === 'rock'){
                if(computerMove === 'paper'){
-                    result = 'you lose'
+                    result = 'You Lose'
                }
                else if(computerMove === 'rock'){
                     result = 'Tie'
                }
                else if(computerMove === 'scissors'){
-                    result = 'you win'
+                    result = 'You Win'
                }}
           else if(playerMove === 'paper'){
                     
@@ -72,15 +72,15 @@
                     result = 'Tie'
                }
                else if(computerMove === 'rock'){
-                    result = 'you win'
+                    result = 'You Win'
                }
                else if(computerMove === 'scissors'){
-                    result = 'you lose'
+                    result = 'You Lose'
                }
           }
-          if (result === 'you win'){
+          if (result === 'You Win'){
                score.wins += 1;
-          }else if(result === 'you lose'){
+          }else if(result === 'You Lose'){
                score.losses +=1;
           }else if(result === 'Tie'){
                score.ties +=1;
@@ -89,14 +89,8 @@
       
      updateScore();
      updaterersults();
-     document.querySelector('.pmoves').innerHTML = `You <img src="images/${playerMove}-emoji.png" alt="" class="icon"> <img src="images/${computerMove}-emoji.png" alt="" class="icon"> computer`;
-
-    /* alert(`you picked ${playerMove}. computer picked ${computerMove}.${result}
-wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties}`); */
-    
-     
-          
-          
+     document.querySelector('.pmoves').innerHTML = `You <img src="images/${playerMove}-emoji.png" alt="" class="icon"> <img src="images/${computerMove}-emoji.png" alt="" class="icon"> Computer`;
+   
     }
     let isautplaying = false;
     let intervalid;
