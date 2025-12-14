@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rock-paper-scissors</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+     <div class="game-container">
+          <div>
+               <p class="game-title">Rock Paper Scissors</p>
+          </div>
+          <div>
+               <button class="move-button js-move-button1"
+         
+          ><img src="images/rock-emoji.png" alt="" class="icon"></button>
+          <button  class="move-button js-move-button2"
+               onclick="playGame('paper') "
+          ><img src="images/paper-emoji.png" alt="" class="icon"></button>
+          <button class="move-button js-move-button3"
+          onclick="playGame('scissors');"
+               ><img src="images/scissors-emoji.png" alt="" class="icon"></button>
+          </div>
+          <div>
+                <p class="presults presults1"></p>
+               <p class="pmoves pmoves1"></p>
+               <p class="p-button p-button1"></p>
+          </div>
+          <div>
+                <button class="reset-btn"
+               onclick="
+               score.wins = 0;
+               score.losses = 0;
+               score.ties = 0;
+               localStorage.removeItem('score');
+               updateScore();
+               "
+               >Reset score</button>
+               <button class="auto-btn js-auto-btn" onclick="
+               autoplay();
+               ">Auto Play</button>
+          </div>
+     </div>
+     <script src="game.js"></script>
+</body>
+</html>
