@@ -13,7 +13,7 @@ This project is great for practicing **JavaScript logic, DOM manipulation, and e
 - Random computer choice every round
 - Instant result display (Win / Lose / Draw)
 - Simple and clean user interface
-- Beginner-friendly code structure
+- Beginner-friendly code structure 
 
 ---
 
